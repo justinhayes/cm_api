@@ -27,8 +27,8 @@ Steps To Deploy a Cluster:
 1. Ensure that clouderaconfig.ini is updated with the hostname of the cluster to provision.
 
 2. Execute the following scripts at the same time. There are sleeps at the appropriate points to account for temporal dependencies amongst the slave and master processes.
-* sudo ./setup-slave.sh #run on all of the slave nodes (ie every node other than the master).
-* sudo ./setup-master.sh #run on the CM master node.
+    * sudo ./setup-slave.sh #run on all of the slave nodes (ie every node other than the master).
+    * sudo ./setup-master.sh #run on the CM master node.
 
 3. Go to http://$CM_MASTER_HOSTNAME:7180/cmf and log in (see the clouderaconfig.ini file for the credentials) to view the cluster.
 
