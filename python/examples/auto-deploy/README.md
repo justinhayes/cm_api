@@ -26,7 +26,7 @@ Assumptions:
 Steps To Deploy a Cluster:
 --------------------------
 
-1. Ensure that clouderaconfig.ini is updated with the hostname of the cluster to provision.
+1. Ensure that clouderaconfig.ini is updated with the hostnames for the cluster, the root data directory (note that the default is to have one data directory, which is not recommended for production use), etc.
 
 2. Execute the following scripts at the same time. There are sleeps at the appropriate points to account for temporal dependencies amongst the slave and master processes.
     * sudo ./setup-slave.sh #run on all of the slave nodes (ie every node other than the master).
