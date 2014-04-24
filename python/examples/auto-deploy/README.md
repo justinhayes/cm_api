@@ -8,6 +8,8 @@ Some limitations are as follows:
 * It does not automatically validate the installation.
 * The configurations used have not been extensively tested. So while the cluster comes up with all greens from a health check perspective, you should still validate that everything works.
 * Not all management services are turned on, as some (ie Navigator) require a Cloudera Enterprise subscription.
+* Accumulo is currently not installed.
+* It currently works with CDH5.0. It can be modified to support CDH4.x, but it won't work without some modifications.
 
 Prerequisites:
 --------------
